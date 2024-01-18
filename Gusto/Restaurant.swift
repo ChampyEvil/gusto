@@ -6,7 +6,9 @@
 //
 
 import Foundation
+import SwiftData
 
+@Model
 class Restaurant {
     var name: String
     var priceRating: Int
