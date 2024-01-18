@@ -14,6 +14,7 @@
 		A33FA4D92B58BC45001BEA7F /* GustoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33FA4D82B58BC45001BEA7F /* GustoTests.swift */; };
 		A33FA4E32B58BC45001BEA7F /* GustoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33FA4E22B58BC45001BEA7F /* GustoUITests.swift */; };
 		A33FA4E52B58BC45001BEA7F /* GustoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33FA4E42B58BC45001BEA7F /* GustoUITestsLaunchTests.swift */; };
+		A33FA4F22B58BD97001BEA7F /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33FA4F12B58BD97001BEA7F /* Restaurant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		A33FA4DE2B58BC45001BEA7F /* GustoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GustoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33FA4E22B58BC45001BEA7F /* GustoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GustoUITests.swift; sourceTree = "<group>"; };
 		A33FA4E42B58BC45001BEA7F /* GustoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GustoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A33FA4F12B58BD97001BEA7F /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				A33FA4C92B58BC44001BEA7F /* ContentView.swift */,
 				A33FA4CB2B58BC45001BEA7F /* Assets.xcassets */,
 				A33FA4CD2B58BC45001BEA7F /* Preview Content */,
+				A33FA4F12B58BD97001BEA7F /* Restaurant.swift */,
 			);
 			path = Gusto;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				A33FA4CA2B58BC44001BEA7F /* ContentView.swift in Sources */,
 				A33FA4C82B58BC44001BEA7F /* GustoApp.swift in Sources */,
+				A33FA4F22B58BD97001BEA7F /* Restaurant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
