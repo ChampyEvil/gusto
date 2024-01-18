@@ -23,14 +23,15 @@ struct ContentView: View {
                     .foregroundStyle(.tint)
                 Text("Hello, world!")
 
-//                List {
-//                    ForEach (restaurants) { restaurant in
-//                        Text(restaurant.name)
-//                    }
-//                }
+                List {
+                    ForEach (restaurants) { restaurant in
+                        Text(restaurant.name)
+                        Text("Overall Rating is \((restaurant.priceRating + restaurant.qualityRating + restaurant.speedRating) / 3)")
+                    }
+                }
             }.toolbar {
                 Button {
-//                    createRestaurant(indexRestaurant: indexRestaurant)
+                    createRestaurant()
                 } label: {
                     Label("Add Restaurant", systemImage: "plus")
                 }
@@ -40,17 +41,21 @@ struct ContentView: View {
         .padding()
     }
 
-//    func createRestaurant(indexRestaurant: Int) {
-//        let mockRestaurants = [
-//            Restaurant(name: "Wok this Way", priceRating: 1, qualityRating: 2, speedRating: 3),
-//            Restaurant(name: "Thyme Square", priceRating: 2, qualityRating: 3, speedRating: 4),
-//            Restaurant(name: "Pasta la Vista", priceRating: 2, qualityRating: 2, speedRating: 3),
-//            Restaurant(name: "Life of Pie", priceRating: 4, qualityRating: 4, speedRating: 4),
-//            Restaurant(name: "Load of the Wings", priceRating: 5, qualityRating: 5, speedRating: 5)
-//        ]
-//
-//        modelContext.insert(mockRestaurants[indexRestaurant])
-//    }
+    func createRestaurant() {
+        let mockRestaurants = [
+            Restaurant(name: "Wok this Way", priceRating: 1, qualityRating: 2, speedRating: 3),
+            Restaurant(name: "Thyme Square", priceRating: 2, qualityRating: 3, speedRating: 4),
+            Restaurant(name: "Pasta la Vista", priceRating: 2, qualityRating: 2, speedRating: 3),
+            Restaurant(name: "Life of Pie", priceRating: 4, qualityRating: 4, speedRating: 4),
+            Restaurant(name: "Load of the Wings", priceRating: 5, qualityRating: 5, speedRating: 5)
+        ]
+
+        modelContext.insert(mockRestaurants[0])
+        modelContext.insert(mockRestaurants[1])
+        modelContext.insert(mockRestaurants[2])
+        modelContext.insert(mockRestaurants[3])
+        modelContext.insert(mockRestaurants[4])
+    }
 
 }
 
