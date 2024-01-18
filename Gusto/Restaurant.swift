@@ -14,4 +14,11 @@ class Restaurant {
     var priceRating: Int
     var qualityRating: Int
     var speedRating: Int
+
+    init(name: String, priceRating: Int, qualityRating: Int, speedRating: Int) {
+        self.name = name
+        self.priceRating = priceRating
+        self.qualityRating = qualityRating
+        self.speedRating = speedRating
+    }
 }
