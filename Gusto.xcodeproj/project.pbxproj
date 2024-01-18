@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A33FA4C82B58BC44001BEA7F /* GustoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33FA4C72B58BC44001BEA7F /* GustoApp.swift */; };
+		A33FA4CA2B58BC44001BEA7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33FA4C92B58BC44001BEA7F /* ContentView.swift */; };
+		A33FA4CC2B58BC45001BEA7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33FA4CB2B58BC45001BEA7F /* Assets.xcassets */; };
+		A33FA4CF2B58BC45001BEA7F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33FA4CE2B58BC45001BEA7F /* Preview Assets.xcassets */; };
+		A33FA4D92B58BC45001BEA7F /* GustoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33FA4D82B58BC45001BEA7F /* GustoTests.swift */; };
+		A33FA4E32B58BC45001BEA7F /* GustoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33FA4E22B58BC45001BEA7F /* GustoUITests.swift */; };
+		A33FA4E52B58BC45001BEA7F /* GustoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33FA4E42B58BC45001BEA7F /* GustoUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A33FA4D52B58BC45001BEA7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A33FA4BC2B58BC44001BEA7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A33FA4C32B58BC44001BEA7F;
+			remoteInfo = Gusto;
+		};
+		A33FA4DF2B58BC45001BEA7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A33FA4BC2B58BC44001BEA7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A33FA4C32B58BC44001BEA7F;
+			remoteInfo = Gusto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A33FA4C42B58BC44001BEA7F /* Gusto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gusto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A33FA4C72B58BC44001BEA7F /* GustoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GustoApp.swift; sourceTree = "<group>"; };
+		A33FA4C92B58BC44001BEA7F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A33FA4CB2B58BC45001BEA7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A33FA4CE2B58BC45001BEA7F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A33FA4D42B58BC45001BEA7F /* GustoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GustoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A33FA4D82B58BC45001BEA7F /* GustoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GustoTests.swift; sourceTree = "<group>"; };
+		A33FA4DE2B58BC45001BEA7F /* GustoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GustoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A33FA4E22B58BC45001BEA7F /* GustoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GustoUITests.swift; sourceTree = "<group>"; };
+		A33FA4E42B58BC45001BEA7F /* GustoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GustoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A33FA4C12B58BC44001BEA7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A33FA4D12B58BC45001BEA7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A33FA4DB2B58BC45001BEA7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A33FA4BB2B58BC44001BEA7F = {
+			isa = PBXGroup;
+			children = (
+				A33FA4C62B58BC44001BEA7F /* Gusto */,
+				A33FA4D72B58BC45001BEA7F /* GustoTests */,
+				A33FA4E12B58BC45001BEA7F /* GustoUITests */,
+				A33FA4C52B58BC44001BEA7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A33FA4C52B58BC44001BEA7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A33FA4C42B58BC44001BEA7F /* Gusto.app */,
+				A33FA4D42B58BC45001BEA7F /* GustoTests.xctest */,
+				A33FA4DE2B58BC45001BEA7F /* GustoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A33FA4C62B58BC44001BEA7F /* Gusto */ = {
+			isa = PBXGroup;
+			children = (
+				A33FA4C72B58BC44001BEA7F /* GustoApp.swift */,
+				A33FA4C92B58BC44001BEA7F /* ContentView.swift */,
+				A33FA4CB2B58BC45001BEA7F /* Assets.xcassets */,
+				A33FA4CD2B58BC45001BEA7F /* Preview Content */,
+			);
+			path = Gusto;
+			sourceTree = "<group>";
+		};
+		A33FA4CD2B58BC45001BEA7F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A33FA4CE2B58BC45001BEA7F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A33FA4D72B58BC45001BEA7F /* GustoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A33FA4D82B58BC45001BEA7F /* GustoTests.swift */,
+			);
+			path = GustoTests;
+			sourceTree = "<group>";
+		};
+		A33FA4E12B58BC45001BEA7F /* GustoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A33FA4E22B58BC45001BEA7F /* GustoUITests.swift */,
+				A33FA4E42B58BC45001BEA7F /* GustoUITestsLaunchTests.swift */,
+			);
+			path = GustoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A33FA4C32B58BC44001BEA7F /* Gusto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A33FA4E82B58BC45001BEA7F /* Build configuration list for PBXNativeTarget "Gusto" */;
+			buildPhases = (
+				A33FA4C02B58BC44001BEA7F /* Sources */,
+				A33FA4C12B58BC44001BEA7F /* Frameworks */,
+				A33FA4C22B58BC44001BEA7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gusto;
+			productName = Gusto;
+			productReference = A33FA4C42B58BC44001BEA7F /* Gusto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A33FA4D32B58BC45001BEA7F /* GustoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A33FA4EB2B58BC45001BEA7F /* Build configuration list for PBXNativeTarget "GustoTests" */;
+			buildPhases = (
+				A33FA4D02B58BC45001BEA7F /* Sources */,
+				A33FA4D12B58BC45001BEA7F /* Frameworks */,
+				A33FA4D22B58BC45001BEA7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A33FA4D62B58BC45001BEA7F /* PBXTargetDependency */,
+			);
+			name = GustoTests;
+			productName = GustoTests;
+			productReference = A33FA4D42B58BC45001BEA7F /* GustoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A33FA4DD2B58BC45001BEA7F /* GustoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A33FA4EE2B58BC45001BEA7F /* Build configuration list for PBXNativeTarget "GustoUITests" */;
+			buildPhases = (
+				A33FA4DA2B58BC45001BEA7F /* Sources */,
+				A33FA4DB2B58BC45001BEA7F /* Frameworks */,
+				A33FA4DC2B58BC45001BEA7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A33FA4E02B58BC45001BEA7F /* PBXTargetDependency */,
+			);
+			name = GustoUITests;
+			productName = GustoUITests;
+			productReference = A33FA4DE2B58BC45001BEA7F /* GustoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A33FA4BC2B58BC44001BEA7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					A33FA4C32B58BC44001BEA7F = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					A33FA4D32B58BC45001BEA7F = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = A33FA4C32B58BC44001BEA7F;
+					};
+					A33FA4DD2B58BC45001BEA7F = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = A33FA4C32B58BC44001BEA7F;
+					};
+				};
+			};
+			buildConfigurationList = A33FA4BF2B58BC44001BEA7F /* Build configuration list for PBXProject "Gusto" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A33FA4BB2B58BC44001BEA7F;
+			productRefGroup = A33FA4C52B58BC44001BEA7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A33FA4C32B58BC44001BEA7F /* Gusto */,
+				A33FA4D32B58BC45001BEA7F /* GustoTests */,
+				A33FA4DD2B58BC45001BEA7F /* GustoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A33FA4C22B58BC44001BEA7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A33FA4CF2B58BC45001BEA7F /* Preview Assets.xcassets in Resources */,
+				A33FA4CC2B58BC45001BEA7F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A33FA4D22B58BC45001BEA7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A33FA4DC2B58BC45001BEA7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A33FA4C02B58BC44001BEA7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A33FA4CA2B58BC44001BEA7F /* ContentView.swift in Sources */,
+				A33FA4C82B58BC44001BEA7F /* GustoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A33FA4D02B58BC45001BEA7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A33FA4D92B58BC45001BEA7F /* GustoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A33FA4DA2B58BC45001BEA7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A33FA4E32B58BC45001BEA7F /* GustoUITests.swift in Sources */,
+				A33FA4E52B58BC45001BEA7F /* GustoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A33FA4D62B58BC45001BEA7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A33FA4C32B58BC44001BEA7F /* Gusto */;
+			targetProxy = A33FA4D52B58BC45001BEA7F /* PBXContainerItemProxy */;
+		};
+		A33FA4E02B58BC45001BEA7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A33FA4C32B58BC44001BEA7F /* Gusto */;
+			targetProxy = A33FA4DF2B58BC45001BEA7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A33FA4E62B58BC45001BEA7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A33FA4E72B58BC45001BEA7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A33FA4E92B58BC45001BEA7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Gusto/Preview Content\"";
+				DEVELOPMENT_TEAM = M2VC4DJT59;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = testFunc.Gusto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A33FA4EA2B58BC45001BEA7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Gusto/Preview Content\"";
+				DEVELOPMENT_TEAM = M2VC4DJT59;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = testFunc.Gusto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A33FA4EC2B58BC45001BEA7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M2VC4DJT59;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = testFunc.GustoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gusto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Gusto";
+			};
+			name = Debug;
+		};
+		A33FA4ED2B58BC45001BEA7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M2VC4DJT59;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = testFunc.GustoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gusto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Gusto";
+			};
+			name = Release;
+		};
+		A33FA4EF2B58BC45001BEA7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M2VC4DJT59;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = testFunc.GustoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Gusto;
+			};
+			name = Debug;
+		};
+		A33FA4F02B58BC45001BEA7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M2VC4DJT59;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = testFunc.GustoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Gusto;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A33FA4BF2B58BC44001BEA7F /* Build configuration list for PBXProject "Gusto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A33FA4E62B58BC45001BEA7F /* Debug */,
+				A33FA4E72B58BC45001BEA7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A33FA4E82B58BC45001BEA7F /* Build configuration list for PBXNativeTarget "Gusto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A33FA4E92B58BC45001BEA7F /* Debug */,
+				A33FA4EA2B58BC45001BEA7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A33FA4EB2B58BC45001BEA7F /* Build configuration list for PBXNativeTarget "GustoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A33FA4EC2B58BC45001BEA7F /* Debug */,
+				A33FA4ED2B58BC45001BEA7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A33FA4EE2B58BC45001BEA7F /* Build configuration list for PBXNativeTarget "GustoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A33FA4EF2B58BC45001BEA7F /* Debug */,
+				A33FA4F02B58BC45001BEA7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A33FA4BC2B58BC44001BEA7F /* Project object */;
+}
