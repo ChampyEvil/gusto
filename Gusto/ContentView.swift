@@ -15,17 +15,45 @@ struct ContentView: View {
     @Query
     private var restaurants: [Restaurant]
 
-    var body: some View {
-        NavigationStack {
-            VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundStyle(.tint)
-                Text("Hello, world!")
+    @State
+    private var goToAddRestaurant = false
+    @State
+    private var path = [Restaurant]()
 
+    var body: some View {
+        NavigationStack(path: $path) {
+            VStack {
                 List {
                     ForEach (restaurants) { restaurant in
-                        NavigationLink(("\(restaurant.name). \nOverall Rating is \((restaurant.priceRating + restaurant.qualityRating + restaurant.speedRating) / 3)"), value: restaurant)
+                        NavigationLink(value: restaurant) {
+                            VStack {
+                                HStack {
+                                    Text("Name")
+                                    Spacer()
+                                    Text(restaurant.name)
+                                }
+                                HStack {
+                                    Text("Price Rating")
+                                    Spacer()
+                                    Text("\(restaurant.priceRating)")
+                                }
+                                HStack {
+                                    Text("Quality Rating")
+                                    Spacer()
+                                    Text("\(restaurant.qualityRating)")
+                                }
+                                HStack {
+                                    Text("Speed Rating")
+                                    Spacer()
+                                    Text("\(restaurant.speedRating)")
+                                }
+                                HStack {
+                                    Text("Overall")
+                                    Spacer()
+                                    Text("\((restaurant.priceRating + restaurant.qualityRating + restaurant.speedRating) / 3)")
+                                }
+                            }
+                        }
                     }
                     .onDelete(perform: deleteRestaurant)
                 }.navigationDestination(for: Restaurant.self) { restaurant in
@@ -39,30 +67,19 @@ struct ContentView: View {
                 }
             }.toolbar {
                 Button {
-                    createRestaurant()
+                    let restaurant = Restaurant(name: "", priceRating: 0, qualityRating: 0, speedRating: 0)
+                    modelContext.insert(restaurant)
+                    path.append(restaurant)
                 } label: {
                     Label("Add Restaurant", systemImage: "plus")
                 }
             }
-
         }
         .padding()
     }
 
-    func createRestaurant() {
-        let mockRestaurants = [
-            Restaurant(name: "Wok this Way", priceRating: 1, qualityRating: 2, speedRating: 3),
-            Restaurant(name: "Thyme Square", priceRating: 2, qualityRating: 3, speedRating: 4),
-            Restaurant(name: "Pasta la Vista", priceRating: 2, qualityRating: 2, speedRating: 3),
-            Restaurant(name: "Life of Pie", priceRating: 4, qualityRating: 4, speedRating: 4),
-            Restaurant(name: "Load of the Wings", priceRating: 5, qualityRating: 5, speedRating: 5)
-        ]
-
-        modelContext.insert(mockRestaurants[0])
-        modelContext.insert(mockRestaurants[1])
-        modelContext.insert(mockRestaurants[2])
-        modelContext.insert(mockRestaurants[3])
-        modelContext.insert(mockRestaurants[4])
+    func updateRestaurant(newRestaurant: Restaurant) {
+        modelContext.insert(newRestaurant)
     }
 
     func deleteRestaurant(at offsets: IndexSet) {
