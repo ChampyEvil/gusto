@@ -25,9 +25,17 @@ struct ContentView: View {
 
                 List {
                     ForEach (restaurants) { restaurant in
-                        Text("\(restaurant.name). \nOverall Rating is \((restaurant.priceRating + restaurant.qualityRating + restaurant.speedRating) / 3)")
+                        NavigationLink(("\(restaurant.name). \nOverall Rating is \((restaurant.priceRating + restaurant.qualityRating + restaurant.speedRating) / 3)"), value: restaurant)
                     }
                     .onDelete(perform: deleteRestaurant)
+                }.navigationDestination(for: Restaurant.self) { restaurant in
+                    @Bindable var restaurant: Restaurant = restaurant
+                    Form {
+                        TextField("Name of Restaurant", text: $restaurant.name)
+                        TextField("Rating of price", value: $restaurant.priceRating, format: .number)
+                        TextField("Rating of quality", value: $restaurant.qualityRating, format: .number)
+                        TextField("Rating of speed", value: $restaurant.speedRating, format: .number)
+                    }
                 }
             }.toolbar {
                 Button {
