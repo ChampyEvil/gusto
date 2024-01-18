@@ -25,9 +25,9 @@ struct ContentView: View {
 
                 List {
                     ForEach (restaurants) { restaurant in
-                        Text(restaurant.name)
-                        Text("Overall Rating is \((restaurant.priceRating + restaurant.qualityRating + restaurant.speedRating) / 3)")
+                        Text("\(restaurant.name). \nOverall Rating is \((restaurant.priceRating + restaurant.qualityRating + restaurant.speedRating) / 3)")
                     }
+                    .onDelete(perform: deleteRestaurant)
                 }
             }.toolbar {
                 Button {
@@ -57,6 +57,12 @@ struct ContentView: View {
         modelContext.insert(mockRestaurants[4])
     }
 
+    func deleteRestaurant(at offsets: IndexSet) {
+        for item in offsets {
+            let object = restaurants[item]
+            modelContext.delete(object)
+        }
+    }
 }
 
 #Preview {
